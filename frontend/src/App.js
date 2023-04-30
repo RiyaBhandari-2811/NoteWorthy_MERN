@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import LandingPage from "./screens/LandingPage/LandingPage";
 import { createBrowserRouter,
   RouterProvider, } from "react-router-dom";
-import MyNotes from "./MyNotes/MyNotes";
+import MyNotes from "./screens/MyNotes/MyNotes";
 
 const router = createBrowserRouter([
   {
