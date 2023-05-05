@@ -3,6 +3,13 @@ import { Button, Container, Row } from "react-bootstrap";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  // Checking Local Storage
+  // useEffect(() => {
+  //   const userInfo = localStorage.getItem("userInfo");
+  //   if (userInfo) {
+  //     history.push("/mynotes");
+  //   }
+  // }, [history]);
   return (
     <div className="main">
       <Container>
@@ -14,10 +21,7 @@ const LandingPage = () => {
 
               <div className="buttonContainer">
                 <a href="/login">
-                  <Button
-                    size="md"
-                    className="landingbutton"
-                  >
+                  <Button size="md" className="landingbutton">
                     Login
                   </Button>
                 </a>

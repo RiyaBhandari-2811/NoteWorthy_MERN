@@ -7,6 +7,7 @@ import {
   NavDropdown,
   Navbar,
 } from "react-bootstrap";
+// import { createBrowserRouter } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -36,7 +37,14 @@ const Header = () => {
             <NavDropdown title="Riya Bhandari" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Logout</NavDropdown.Item>
+              <NavDropdown.Item
+                // onClick={() => {
+                //   localStorage.removeItem("userInfo");
+                //   router.navigate("/");
+                // }}
+              >
+                Logout
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
