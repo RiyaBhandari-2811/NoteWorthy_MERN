@@ -14,6 +14,7 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 
   // If it doesn't exist then we'll create new user in DB
+  // The create() method is a convenient and concise way to create a new document and save it to the database in a single step. It takes an object as an argument, representing the data for the new document, and returns a promise that resolves to the newly created document.
   const user = await User.create({
     name,
     email,
